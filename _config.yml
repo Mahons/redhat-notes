@@ -33,9 +33,10 @@ url: "https://redhat.mtechsolutions.ie" # the base hostname & protocol for your 
 github_username:  mahons
 
 # Build settings
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/architect@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
