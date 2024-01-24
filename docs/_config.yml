@@ -33,7 +33,7 @@ url: "https://redhat.mtechsolutions.ie" # the base hostname & protocol for your 
 github_username:  mahons
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
