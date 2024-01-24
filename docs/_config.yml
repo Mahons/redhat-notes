@@ -27,6 +27,7 @@ description: >-
   complexities of Red Hat certifications, offering organized and insightful notes
   to enhance your preparation. Join me on this journey to mastery, where knowledge
   meets clarity, empowering you for success in Red Hat examinations.
+domain: redhat.mtechsolutions.ie
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://redhat.mtechsolutions.ie" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mahons
