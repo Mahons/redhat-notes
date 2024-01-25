@@ -21,9 +21,7 @@
 title: My Red Hat Journey – Exam Notes
 email: stephen@mtechsolutions.ie
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my dedicated space for Red Hat exam notes! Explore comprehensive study materials and curated content as I prepare for upcoming Red Hat exams. 
-  This Jekyll-powered website is designed to help fellow learners navigate the complexities of Red Hat certifications, offering organised and insightful 
-  notes to enhance your preparation. Join me on this journey to mastery, where knowledge meets clarity, empowering you for success in Red Hat examinations.
+  Exam notes for my Red Hat certification journey.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://redhat.mtechsolutions.ie" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mahons
