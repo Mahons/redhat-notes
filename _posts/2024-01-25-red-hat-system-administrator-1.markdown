@@ -7,7 +7,7 @@ categories: RH124
 
 The first certification that I'm attempting is the [Red Hat Administration 1 (RH124)](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i). Given my limited experience with Red Hat, it's best to start at the beginning and get the basics right!
 
-The following is an outline for the course:
+The following is an outline for the certification:
 
 - Get started with Red Hat Enterprise Linux
     Describe and define open source, Linux, Linux distributions, and Red Hat Enterprise Linux
