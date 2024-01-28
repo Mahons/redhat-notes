@@ -69,7 +69,7 @@ footer:
 comments:
   provider: "disqus"
   disqus:
-    shortname: "mtechsolutions.disqus.com"
+    shortname: mtechsolutions
 
 collections:
   - RH124
