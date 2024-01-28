@@ -1,20 +1,76 @@
 title: My Red Hat Certification Journey 
+subtitle: V0.1
 description: Exam notes for my Red Hat certification journey.
 url: "http://redhat.mtechsolutions.ie"
+repository: "mahons/redhat-notes"
 
-remote_theme: jekyll/minima
+#logo: "/assets/images/logo.png" 
+
+author:
+  name: Stephen Mahon
+  email: stephen@mtechsolutions.ie
+
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag  
+  - jekyll-remote-theme 
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-paginate 
+  - jekyll-gist
 
-show_excerpts: true
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-JK6WYLH9WJ"
+    anonymize_ip: false # default
 
-google_analytics: G-JK6WYLH9WJ
+minimal_mistakes_skin: "dark"
 
-minima:
-  skin: dark
-  date_format: "%b %-d, %Y"
-  social_links:
-    - { platform: github,         user_url: "https://github.com/Mahons" }
-    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/stephenmahon" }
+ompress_html:
+  clippings: all
+  ignore:
+    envs: development 
+
+defaults:  
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true      
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "home"
+
+search: true
+lunr:
+  search_within_pages: false
+
+footer:
+  links:    
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mahons"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/stephenmahon"
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "mtechsolutions.disqus.com"
+
+collections:
+  - RH124
+  - RH134

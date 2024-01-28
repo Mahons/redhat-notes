@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title:  "Red Hat System Administration I (RH124)"
 date:   2024-01-26 21:21:57 +0000
 categories: RH124
+author: Stephen Mahon
 ---
 
 The first certification that I'm attempting is the [Red Hat Administration 1 (RH124)](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i). Given my limited experience with Red Hat, it's best to start at the beginning and get the basics right!
