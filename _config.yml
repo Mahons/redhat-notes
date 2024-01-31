@@ -55,13 +55,10 @@ lunr:
   search_within_pages: false
 
 footer:
-  links:    
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mahons"
+  links:        
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/stephenmahon"
+      url: "https://www.linkedin.com/company/mtechsolutions/"
 
 comments:
   provider: "disqus"
