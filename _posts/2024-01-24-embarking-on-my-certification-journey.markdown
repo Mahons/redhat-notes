@@ -4,6 +4,7 @@ title:  "Embarking on my Red Hat Certification journey"
 date:   2024-01-24 21:21:57 +0000
 categories: intro
 author: Stephen Mahon
+toc: false
 ---
 
 After two decades immersed in Microsoft's ecosystem, I'm excited to embark on a new adventure – pursuing Red Hat certification! While my journey with Microsoft technologies continues to be a significant part of my professional identity, I'm eager to expand my horizons and embrace the challenges and opportunities Red Hat's ecosystem presents.
