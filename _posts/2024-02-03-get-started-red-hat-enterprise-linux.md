@@ -1,8 +1,6 @@
 ---
 layout: single
 title:  "Get started with Red Hat Enterprise Linux"
-header:
-  teaser: "/assets/images/mtechsolutions.png"
 author: Stephen Mahon
 categories: 
   - RH124
@@ -65,7 +63,7 @@ Overall, Linux distributions are crucial in making Linux accessible to a wide ra
 
 [Red Hat](https://www.redhat.com) is a leading provider of open source software solutions, best known for its enterprise Linux distribution, Red Hat Enterprise Linux (RHEL). Founded in 1993, Red Hat has played a pivotal role in advancing open-source technologies and has become synonymous with reliability, security, and innovation in the enterprise software industry. In addition to RHEL, Red Hat offers a wide range of products and services, including middleware, cloud computing solutions (such as [Open Shift](https://www.redhat.com/en/technologies/cloud-computing/openshift)), virtualization technologies, and management tools. As a strong advocate for the open-source community, Red Hat contributes to numerous open-source projects and collaborates with partners and customers worldwide to drive technological advancements and empower businesses to succeed in the digital age.
 
-Professionally, we're embarking on our Red Hat Open Shift journey this year, which is why I'm undertaking my journey with Red Hat certification. One that I'm enjoying as I expand my horizon beyond the Microsoft ecosystem.
+Professionally, we're embarking on our Red Hat Open Shift journey this year, which is why I'm undertaking my personal journey with Red Hat certification. One that I'm enjoying as I expand my horizon beyond the Microsoft ecosystem.
 
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems)
 [^2]: [Openwall](https://www.openwall.com/lists/oss-security/2019/06/27/7)
