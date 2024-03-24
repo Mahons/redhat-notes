@@ -62,10 +62,50 @@ On the left hand side, there are ten characters, of which the first character in
 
 For example, *subfolder* is a directory, whilst *test1.txt* is a regular file.
 
-The remaining nine characters, e.g., *rwxr-xr-x* can be broken into three sets of three characters, indicating the system permission for the aforementioned, Owner, Group, and Others. 
+The remaining nine characters, e.g., *rwxr-xr-x* can be broken into three sets of three characters, indicating the system permission for the aforementioned, Owner, Group, and Others.
 
 For example, the user *smahon* has read and write (rw-) permission on test1.txt, the group *smahon* has only read permission (r--), as does all other users (r--).
 
 The most specific set of permissions applies. So if the smahon user has permissions different from the smahon group, and the smahon user is also a member of that group, then only the user owner's permissions apply. This permission allows setting a more restrictive set of permissions on a user than their group membership provides when removing the user from the group might not be practical.
 
-No doubt, there's a lot more that I can add to this, but that's enough for my lunch break!
+## Changing File System Permissions
+
+
+    The chmod command changes file permissions from the command line.
+
+    The chmod command can use one of two methods to represent permissions: symbolic or octal.
+
+
+## Changing File Ownership
+
+    The chown command changes file ownership. The chown command -R option recursively changes the ownership of a directory tree.
+
+## Special Permissions
+
+## UMASK
+
+The *umask* command  plays a crucial role in determining the default permissions assigned to newly created files and directories. Essentially, it acts as a protective mask, subtracting specific permission bits from the default permissions assigned by the system.
+
+The default permissions for:
+
+- **Files** are 666, i.e.,  read and write for owner, group, and others
+- **Directories**, it is 777, i.e., read, write, and execute for owner, group, and others.
+
+To understand and set the umask, one must first grasp the octal representation of file permissions. The umask value is subtracted from the default permissions to calculate the final permissions. For instance, a umask of 022 results in default permissions of 644 for files and 755 for directories. This means that, by default, new files are created with read and write permissions for the owner and read-only permissions for the group and others, while new directories are created with read, write, and execute permissions for the owner and read and execute permissions for the group and others.
+
+Changing the umask involves using the umask command followed by the desired octal value. To make this change persistent across sessions, users can modify their shell configuration files, such as .bashrc or .bash_profile, by adding the umask command with the preferred value. This empowers users to tailor the default permissions to align with their security and privacy preferences, contributing to a more controlled and secure computing environment.
+
+To retrieve the current umask value, simply, enter the command umask.
+
+```bash
+  [smahon@DellXPS13 ~]$ umask
+  0022
+```
+
+To update the umask value, simply append the new value as an argument to *umask* command
+
+```bash
+  [smahon@DellXPS13 ~]$ umask 077
+  [smahon@DellXPS13 ~]$ umask 
+  0077
+```
