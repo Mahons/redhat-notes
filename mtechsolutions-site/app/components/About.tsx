@@ -74,7 +74,7 @@ export default function About() {
               <div className="space-y-6">
                 <div className="border-l-4 border-primary-600 pl-4">
                   <div className="text-3xl font-bold text-primary-600 mb-1">18+ Years</div>
-                  <div className="text-gray-700">Principal Software Architect role</div>
+                  <div className="text-gray-700">Trusted by An Garda Síochána to deliver critical solutions</div>
                 </div>
                 <div className="border-l-4 border-primary-600 pl-4">
                   <div className="text-3xl font-bold text-primary-600 mb-1">95%</div>
