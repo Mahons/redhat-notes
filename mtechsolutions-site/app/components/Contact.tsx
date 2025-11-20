@@ -25,7 +25,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">LinkedIn</h3>
                 <a
-                  href="https://www.linkedin.com/company/mtechsolutions/"
+                  href="https://www.linkedin.com/in/stephenmahon/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-600 hover:text-primary-700 text-lg inline-flex items-center"

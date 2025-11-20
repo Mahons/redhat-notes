@@ -55,7 +55,7 @@ export default function About() {
 
             <div className="mt-8">
               <a
-                href="https://www.linkedin.com/company/mtechsolutions/"
+                href="https://www.linkedin.com/in/stephenmahon/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
