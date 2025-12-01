@@ -28,6 +28,11 @@ export default function About() {
                 <strong>I'm now available for consulting engagements through MTechSolutions</strong> -
                 bringing this depth of experience to help your organisation succeed.
               </p>
+              <p>
+                Beyond technology, I'm passionate about giving back to my local community.
+                I coach the Raheny United FC U11s girls football team, and MTechSolutions
+                is proud to sponsor them.
+              </p>
             </div>
 
             <div className="mt-8 space-y-4">
