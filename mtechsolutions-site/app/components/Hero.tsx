@@ -16,7 +16,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://calendly.com/your-calendly-link"
+              href="https://calendly.com/stephen-mahon-mtechsolutions/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10 transition shadow-lg hover:shadow-xl"
