@@ -4,98 +4,72 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll-based static site for Red Hat certification exam notes, specifically for RH124 and RH134 certifications. The site uses the Minimal Mistakes theme and is deployed to GitHub Pages.
+This is the MTechSolutions professional consulting website, built with Next.js and Tailwind CSS, deployed to GitHub Pages via static export.
 
 ## Development Commands
 
 ### Running the site locally
 
 ```bash
-bundle exec jekyll serve
+cd mtechsolutions-site
+npm run dev
 ```
 
-For development mode with local configuration overrides:
-
-```bash
-bundle exec jekyll serve --config _config.yml,_config.dev.yml
-```
-
-This runs the site at `http://localhost:4000` with analytics disabled and expanded CSS for debugging.
+Visit `http://localhost:3000`.
 
 ### Installing dependencies
 
 ```bash
-bundle install
+cd mtechsolutions-site
+npm install
 ```
+
+### Building for production
+
+```bash
+cd mtechsolutions-site
+npm run build
+```
+
+Output is written to `mtechsolutions-site/out/`.
 
 ## Site Architecture
 
-### Content Organization
+The Next.js app is located in `mtechsolutions-site/`.
 
-- **_posts/**: Blog posts for certification notes, named with date prefix (YYYY-MM-DD-title.md)
-  - Posts are categorized by Red Hat course (RH124, RH134)
-  - Each post uses front matter with layout, title, author, categories, and tags
+### Key directories
 
-- **_pages/**: Static pages including About, Services pages, and the post archive
+- **app/**: Next.js App Router pages and layout
+  - `page.tsx`: Home page — composes all section components
+  - `layout.tsx`: Root layout with metadata and Google Analytics
+  - `globals.css`: Global styles and Tailwind imports
+  - `components/`: One component per page section (see below)
 
-- **_data/**: YAML configuration files
-  - `navigation.yml`: Site navigation menu structure
-  - `authors.yml`: Author information
-  - `sidebars/`: Sidebar navigation configurations
+- **public/**: Static assets (images, favicon, CNAME)
 
-- **_includes/**: Custom HTML includes (e.g., footer.html)
+### Components
 
-- **assets/images/**: Image assets for the site
+| File | Section |
+|------|---------|
+| `Navigation.tsx` | Top nav bar |
+| `Hero.tsx` | Hero/landing section |
+| `Services.tsx` | Services offered |
+| `CaseStudies.tsx` | Case studies |
+| `About.tsx` | About Me, expertise, certifications |
+| `Contact.tsx` | Contact form |
+| `Footer.tsx` | Site footer |
+| `GoogleAnalytics.tsx` | GA4 script injection |
 
 ### Configuration
 
-- **_config.yml**: Main Jekyll configuration
-  - Uses remote theme: mmistakes/minimal-mistakes
-  - Configured for GitHub Pages deployment
-  - Includes Google Analytics (G-JK6WYLH9WJ)
-  - Disqus comments integration (shortname: mtechsolutions)
-  - Collections: RH124, RH134 for organizing certification content
-
-- **_config.dev.yml**: Development overrides
-  - Disables analytics
-  - Uses localhost:4000 URL
-  - Expands CSS for debugging
-
-### Post Structure
-
-Blog posts follow this front matter pattern:
-
-```yaml
----
-layout: single
-title: "Post Title"
-author: Stephen Mahon
-categories:
-  - RH124  # or RH134
-tags:
-  - rhel
-  - linux
-  - [topic-specific tags]
----
-```
-
-Posts automatically get:
-- Table of contents (toc: true)
-- Author profile
-- Read time estimation
-- Related posts
-- Social sharing buttons
-- Disqus comments
+- **next.config.ts**: Enables static export (`output: 'export'`)
+- **tailwind.config.ts**: Tailwind CSS configuration
+- **tsconfig.json**: TypeScript configuration
 
 ## Domain and Deployment
 
-- Production URL: http://www.mtechsolutions.ie
-- CNAME configured for custom domain
+- Production URL: https://www.mtechsolutions.ie
+- CNAME file in `public/` for custom domain
 - Repository: mahons/redhat-notes
-- Deployed via GitHub Pages
-
-## Ruby/Jekyll Dependencies
-
-- Uses github-pages gem (~> 228) for GitHub Pages compatibility
-- Key plugins: jekyll-feed, jekyll-include-cache, jekyll-paginate, jekyll-sitemap
-- Webrick gem for local development server
+- Deployed via GitHub Actions on push to `main` (see `.github/workflows/deploy.yml`)
+- Static output from `mtechsolutions-site/out/` is deployed to GitHub Pages

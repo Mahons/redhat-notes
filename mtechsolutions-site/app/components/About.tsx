@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
@@ -96,11 +98,20 @@ export default function About() {
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-4">Certifications</h4>
-                <p className="text-gray-600">
-                  Currently pursuing Red Hat certifications to deepen expertise in 
-                  enterprise Linux systems and cloud infrastructure.
-                </p>
+                <h4 className="font-semibold text-gray-900 mb-4">Certifications & Partnerships</h4>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/red-hat-partner-badge.png"
+                    alt="Red Hat Partner"
+                    width={100}
+                    height={100}
+                    className="flex-shrink-0"
+                  />
+                  <p className="text-gray-600">
+                    Official Red Hat Partner, delivering enterprise-grade Linux and
+                    cloud infrastructure solutions backed by Red Hat&apos;s ecosystem.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
